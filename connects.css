@@ -111,11 +111,6 @@ body {
     
 }
 
-.content .left .btn {
-  text-decoration: none; 
-  display: inline-block;
-}
-
 .btn {
     background-color: #3882F6;
     color: #ffffff;
@@ -140,16 +135,17 @@ body {
 }
 
 .profile-img {
-    width: 400px;
+    width: 350px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 10px 20px #0000009c;
 
 }
 
-/* div main starts here */
+/* Main div starts here */
 
-.main {
+
+.main2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,11 +153,12 @@ body {
     justify-content: space-between;
     margin-bottom: 50px;
     padding: 0 20px;
+    width: 100%;
 
 
 }
 
-.main h2 {
+.main2 h2 {
     display: flex;
     font-size: 32px;
     color: #1F2937;
@@ -169,140 +166,78 @@ body {
     margin-bottom: 20px;
     font-family: "Ubuntu", sans-serif;
     justify-content: center;
+    text-align: center;
 }
 
-.main .box-img {
+.main2 .box-img {
     width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 15px 20px #0000009c;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.boxes {
+.boxes1 {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px
 }
 
-.boxes p {
+/* gemini idea */
+
+.boxes1 .first,
+.boxes1 .second,
+.boxes1 .third,
+.boxes1 .forth {
+  display: flex;
+  flex-direction: column; /* LESSON: Stacks the image, paragraph, and button vertically */
+  align-items: center;    /* LESSON: Centers the stacked text and button perfectly beneath the image */
+  text-align: center;
+  flex: 1;                /* LESSON: Allows cards to grow and distribute extra space evenly */
+  min-width: 220px;       /* LESSON: Prevents the layout from shrinking card contents too far */
+  max-width: 250px;       /* LESSON: Caps card width so they remain clean and proportional */
+}
+
+.boxes1 a {
+    text-decoration: none;
+}
+
+.btn1 {
+    margin-top: auto;
+    background-color: #3882F6;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #0000009c;
+}
+
+.btn1:hover {
+    background-color: #8b9dbb;
+    box-shadow: 0px 8px 15px #0000009c;
+
+}
+
+/* Up Gemini Idea ends here */
+
+.boxes1 p {
     font-size: 20px;
     color: #1F2937;
     font-weight: 500;
     font-family: "Ubuntu", sans-serif;
     flex-wrap: wrap;
-}
-
-.boxes h3 {
-    font-size: 22px;
-    color: #1F2937;
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-family: "Ubuntu", sans-serif;
-}
-
-
-/* Qoute section */
-
-.quote {
-    background-color: #E5E7EB;;
-    padding: 50px 50px;
-    display: flex;
-    width: 100%;
-    box-shadow: 0px 15px 20px #0000009c;
-    margin-bottom: 50px;
-    
-    
-}
-
-.saying .quote-mark {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-family: "Ubuntu", sans-serif;
-    padding: 50px 50px;;
-    
-}
-
-.quote h2 {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 500;
-    font-family: "Ubuntu", sans-serif;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-}
-
-.quote p {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 500;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    text-align: right;
-    padding: 30px;
-    margin: 0;
-}
-
-/* brands ive worked with */
-
-.worked {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-    gap: 20px;
-    
-}
-
-.blue {
-    background-color: #3882F6;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 8px;
-     box-shadow: 0px 15px 20px #0000009c;
-}
-
-.worked h2 {
-    display: flex;
-    font-size: 32px;
-    color: #1F2937;
-    font-weight: 900;
-    margin-bottom: 20px;
-    font-family: "Ubuntu", sans-serif;
-    justify-content: center;
-}
-
-.brands {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 0px 20px;
-    margin-bottom: 30px;
-
-}
-
-.worked .img2 {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 15px 20px #0000009c;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 

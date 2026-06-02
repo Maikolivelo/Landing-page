@@ -316,3 +316,96 @@ body {
     padding: 20px 0;
     margin-top: auto;
 }
+
+
+/* Mobile app */
+
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES (768px or smaller)
+   ========================================== */
+@media screen and (max-width: 768px) {
+    
+    /* ---- HEADER & NAVBAR ---- */
+    .navbar {
+        flex-direction: column; /* Stacks logo and nav links vertically */
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        font-size: 20px; /* Scales down oversized navbar font */
+        justify-content: center;
+        flex-wrap: wrap; /* Allows links to wrap if they run out of space */
+    }
+
+    .logo img {
+        margin: 0 auto; /* Centers your logo container */
+    }
+
+    /* ---- HERO CONTENT ---- */
+    .content {
+        flex-direction: column-reverse; /* Drops image nicely below introduction */
+        text-align: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .content .right {
+        margin-left: 0 !important; /* Removes the massive 430px desktop gap shifting image offscreen */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 100%;
+        max-width: 280px; /* Makes profile image fit perfectly on small screens */
+        height: auto;
+    }
+
+    .content h1 {
+        font-size: 34px; /* Prevents title from clipping or breaking words */
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    /* ---- MAIN CORE SECTIONS & CARDS ---- */
+    .boxes, .boxes1 {
+        flex-direction: column; /* Converts rows to clean vertical scrolls */
+        align-items: center;
+        flex-wrap: wrap; 
+        gap: 30px;
+    }
+
+    /* Target specific card overrides across files */
+    .boxes1 .first, .boxes1 .second, .boxes1 .third, .boxes1 .forth {
+        max-width: 90% !important; /* Scales cards smoothly across screen sizes */
+        width: 280px;
+    }
+
+    /* ---- HOME PAGE BRANDS & QUOTE SECTIONS ---- */
+    .brands {
+        flex-direction: column; /* Stack partner brand logos cleanly instead of a horizontal line */
+        gap: 25px;
+    }
+
+    .quote {
+        padding: 20px 10px; /* Drops giant desk padding margins */
+    }
+
+    .saying .quote-mark {
+        padding: 15px;
+    }
+
+    .quote h2 {
+        font-size: 20px; /* Makes your personal quote text easily readable on phones */
+        text-align: left;
+    }
+
+    .quote p {
+        font-size: 22px;
+        padding: 10px;
+    }
+}

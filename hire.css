@@ -107,9 +107,13 @@ body {
     color: #f8f8f8;    
     margin-bottom: 15px;
     font-family: "Ubuntu", sans-serif;
-    
-    
+       
 }
+
+.content .left .btn {
+  text-decoration: none; 
+  display: inline-block;
+} 
 
 .btn {
     background-color: #3882F6;
